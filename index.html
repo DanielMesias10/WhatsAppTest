@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot WhatsApp</title>
     <style>
-      .whatsapp-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50%;
-        width: 100px; /* Tamaño del contenedor */
-        height: 100px; /* Tamaño del contenedor */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        z-index: 1000;
-      }
-      .whatsapp-btn i {
-        font-size: 50px; /* Tamaño del icono */
-      }
+        
     </style>
-  </head>
-  <body>
-    <!-- Contenido de tu página web -->
+</head>
+<body>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+    </header>
 
-    <a
-      href="https://wa.me/5211234567890?text=Hola%20quiero%20más%20información"
-      class="whatsapp-btn"
-      target="_blank"
-    >
-      <i class="fa fa-whatsapp"></i>
-    </a>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hola, ¿en que te puedo ayudar?</p>
+      </li>
+      <li class="chat outgoing">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sequi ipsa ipsum aliquam repellat accusantium illum a? Amet tempore, ducimus, laudantium, tenetur similique quas deserunt nobis repellendus facere reprehenderit error!</p>
+      </li>
+    </ul>
+  </div>
 
-    <!-- Asegúrate de incluir Font Awesome para el icono de WhatsApp -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </body>
+  <div class="chat-input">
+    <textarea placeholder="Escribe tu mensaje..."></textarea>
+    <span id="send-btn" class="material-symbols-outlined">Enviar</span>
+  </div>
+
+
+  <script>
+
+  </script>
+</body>
 </html>
